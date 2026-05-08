@@ -120,7 +120,7 @@ fun exercise6() {
     )
 
     for (course in courses) {
-        println(course)  // calls toString() automatically
+        println(course)  
     }
 }
 
