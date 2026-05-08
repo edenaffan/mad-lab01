@@ -26,33 +26,33 @@ fun main() {
     exercise7()
 }
 
-// ----------------------------------------------------------
+
 // Exercise 1 — Variables & Types
-// ----------------------------------------------------------
+
 fun exercise1() {
-    val name = "Affan Abuubakar Hassan"  // val = immutable (cannot be reassigned)
-    var age = 21                          // var = mutable (can be reassigned)
+    val name = "Affan Abuubakar Hassan"  
+    var age = 21                          
     println("My name is $name and I am $age years old.")
 
-    age = 22  // var allows reassignment
+    age = 22  
     println("Next year I will be $age years old.")
 }
 
-// ----------------------------------------------------------
+
 // Exercise 2 — Function: Area of a Rectangle
-// ----------------------------------------------------------
+
 fun area(width: Double, height: Double): Double {
     return width * height
 }
 
 fun exercise2() {
-    println("area(3.0, 4.0) = ${area(3.0, 4.0)}")   // Expected: 12.0
-    println("area(5.5, 2.0) = ${area(5.5, 2.0)}")   // Expected: 11.0
+    println("area(3.0, 4.0) = ${area(3.0, 4.0)}")   
+    println("area(5.5, 2.0) = ${area(5.5, 2.0)}")   
 }
 
-// ----------------------------------------------------------
+
 // Exercise 3 — Control Flow: Grade Calculator
-// ----------------------------------------------------------
+
 fun grade(score: Int): String {
     return when {
         score >= 80 -> "A"
@@ -70,14 +70,14 @@ fun exercise3() {
     }
 }
 
-// ----------------------------------------------------------
+
 // Exercise 4 — Loop: FizzBuzz (1..30)
-// ----------------------------------------------------------
+
 fun exercise4() {
     for (i in 1..30) {
         println(
             when {
-                i % 15 == 0 -> "FizzBuzz"   // divisible by both 3 and 5 (check first!)
+                i % 15 == 0 -> "FizzBuzz"   
                 i % 3  == 0 -> "Fizz"
                 i % 5  == 0 -> "Buzz"
                 else        -> i.toString()
@@ -86,9 +86,9 @@ fun exercise4() {
     }
 }
 
-// ----------------------------------------------------------
+
 // Exercise 5 — List Operations
-// ----------------------------------------------------------
+
 fun exercise5() {
     val nums = listOf(1, 2, 3, 4, 5, 6)
 
@@ -104,9 +104,8 @@ fun exercise5() {
     println("Doubled: $doubled")
 }
 
-// ----------------------------------------------------------
 // Exercise 6 — Classes
-// ----------------------------------------------------------
+
 class Course(val code: String, val title: String, val credits: Int) {
     override fun toString(): String {
         return "[$code] $title ($credits credits)"
@@ -125,9 +124,8 @@ fun exercise6() {
     }
 }
 
-// ----------------------------------------------------------
 // Exercise 7 — Null Safety
-// ----------------------------------------------------------
+
 fun exercise7() {
     // Simulating a nullable String (as if from readLine())
     val name: String? = "Affan"   // Try changing to null to test null safety
